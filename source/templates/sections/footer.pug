@@ -1,0 +1,20 @@
+- var linksItems = ['facebook-official', 'twitter', 'google-plus', 'linkedin'];
+- var linkUrls = ['facebook.com', 'twitter.com', 'google.com', 'linkedin.com'];
+
+footer.footer
+    .footer__top
+        .container
+            .footer__title Get In Touch
+            .footer__links
+                each item, key in linksItems
+                    a.footer__social(href="http://" + linkUrls[key] target="_blank")
+                        i(class="fa fa-" + item aria-hidden="true")
+                            span.visually-hidden=linksItems[key]
+
+            .footer__text asdasdsadsdadsadasdsd ad dasdsadasddsad
+            form(action="#" method="post")
+                .footer__field: input.footer__input(type="email" placeholder="Email Address")
+                button.button(type="submit") Subscribe
+
+    .footer__bottom
+        .footer__copy Cssauthor.com @ 2014 All Rights Reserved
